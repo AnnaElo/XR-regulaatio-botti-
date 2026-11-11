@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XR-sääntelybotti</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1b; --muted: #5d5d58; --line: #dcdcd6;
+    --accent: #1f5fae; --accent-text: #ffffff; --user: #e8eef7; --warn: #fff6e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --panel: #20201e; --text: #ececea; --muted: #a5a59f; --line: #3a3a36;
+      --accent: #6aa2e8; --accent-text: #0d1a2b; --user: #23324a; --warn: #3a3220; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; min-height: 100vh; display: flex; flex-direction: column; }
+  header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  h1 { font-size: 1.35rem; margin: 8px 0; }
+  .lang button { background: none; border: 1px solid var(--line); color: var(--text); padding: 4px 10px; border-radius: 6px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .notice { background: var(--warn); border-radius: 8px; padding: 10px 14px; font-size: .9rem; margin: 8px 0 16px; }
+  #log { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+  .msg { padding: 12px 16px; border-radius: 10px; background: var(--panel); border: 1px solid var(--line); overflow-wrap: anywhere; }
+  .msg.user { background: var(--user); align-self: flex-end; max-width: 85%; }
+  .msg h2, .msg h3 { font-size: 1.05rem; margin: 14px 0 6px; }
+  .msg p { margin: 6px 0; }
+  .msg a { color: var(--accent); }
+  .sources { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 8px; font-size: .85rem; color: var(--muted); }
+  .sources ol { margin: 4px 0; padding-left: 20px; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .examples button { background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: 16px; padding: 6px 12px; cursor: pointer; font-size: .9rem; text-align: left; }
+  form { display: flex; gap: 8px; margin-top: 16px; position: sticky; bottom: 0; background: var(--bg); padding: 8px 0 16px; }
+  textarea { flex: 1; resize: vertical; min-height: 56px; font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text); }
+  form button { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 8px; padding: 0 18px; font-weight: 600; cursor: pointer; }
+  form button:disabled { opacity: .5; cursor: wait; }
+  footer { font-size: .8rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 data-i18n="title"></h1>
+    <div class="lang" role="group" aria-label="Kieli / Language">
+      <button type="button" data-lang="fi">Suomi</button>
+      <button type="button" data-lang="en">English</button>
+    </div>
+  </header>
+  <p class="notice" data-i18n="notice"></p>
+  <div class="examples" id="examples"></div>
+  <div id="log" aria-live="polite"></div>
+  <form id="form">
+    <label for="q" class="sr" hidden data-i18n="placeholder"></label>
+    <textarea id="q" required maxlength="4000"></textarea>
+    <button id="send" type="submit" data-i18n="send"></button>
+  </form>
+  <footer data-i18n="footer"></footer>
+</main>
+<script>
+const T = {
+  fi: {
+    title: "XR-sääntelybotti",
+    notice: "Keskustelet tekoälyn kanssa. Botti antaa yleiskatsauksen XR-toteutusta koskevista standardeista ja EU-sääntelystä, ei oikeudellista neuvontaa. Älä kirjoita henkilötietoja. Kysymyksiä ei tallenneta, mutta ne käsitellään Anthropicin Claude API:ssa.",
+    placeholder: "Kuvaile XR-projektisi tai kysy jotain…",
+    send: "Lähetä",
+    thinking: "Selvitetään lähteistä…",
+    sources: "Lähteet tietopohjasta",
+    footer: "Tietopohja: XR-vuosi 2026, Anna Eloranta (Oamk), FINverse-hanke. Tarkista velvoitteet aina säädöstekstistä.",
+    errors: { rate_limited: "Liian monta kysymystä lyhyessä ajassa. Odota hetki.", busy: "Palvelu on ruuhkainen. Yritä hetken päästä uudelleen.", refused: "Botti ei voi vastata tähän kysymykseen.", default: "Jokin meni pieleen. Yritä uudelleen." },
+    examples: ["Teemme VR-koulutussovellusta oppilaitokselle, ja tekoäly arvioi suoritukset. Mitä pitää huomioida?", "Mitä standardeja kannattaa käyttää kaupungin digitaalisessa kaksosessa?", "Mikä on OpenXR?"],
+  },
+  en: {
+    title: "XR regulation assistant",
+    notice: "You are talking to an AI. The assistant gives an overview of standards and EU regulation relevant to XR projects, not legal advice. Do not enter personal data. Questions are not stored, but they are processed by Anthropic's Claude API.",
+    placeholder: "Describe your XR project or ask a question…",
+    send: "Send",
+    thinking: "Checking the sources…",
+    sources: "Sources from the knowledge base",
+    footer: "Knowledge base: XR-vuosi 2026, Anna Eloranta (Oamk), FINverse project. Always check obligations in the legal text.",
+    errors: { rate_limited: "Too many questions in a short time. Please wait a moment.", busy: "The service is busy. Please try again shortly.", refused: "The assistant can't answer this question.", default: "Something went wrong. Please try again." },
+    examples: ["Our AR glasses app has an AI avatar that talks to users. We launch in Finland and the US.", "Which standards should a city digital twin use?", "What is OpenXR?"],
+  },
+};
+let lang = (navigator.language || "fi").startsWith("fi") ? "fi" : "en";
+try { lang = localStorage.getItem("lang") || lang; } catch {}
+const history = [];
+const $ = (id) => document.getElementById(id);
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach((el) => (el.textContent = T[lang][el.dataset.i18n]));
+  document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  $("q").placeholder = T[lang].placeholder;
+  const ex = $("examples");
+  ex.replaceChildren(...(history.length ? [] : T[lang].examples.map((q) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = q;
+    b.onclick = () => { $("q").value = q; $("form").requestSubmit(); };
+    return b;
+  })));
+}
+document.querySelectorAll("[data-lang]").forEach((b) => (b.onclick = () => {
+  lang = b.dataset.lang; try { localStorage.setItem("lang", lang); } catch {} applyLang();
+}));
+
+function esc(s) { return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function inline(s) {
+  return esc(s)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/(^|[\s(])(https?:\/\/[^\s)<]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+}
+function markdown(md) {
+  const out = []; let list = null;
+  const close = () => { if (list) { out.push(`</${list}>`); list = null; } };
+  for (const line of md.split("\n")) {
+    let m;
+    if ((m = line.match(/^(#{1,4})\s+(.*)/))) { close(); out.push(`<h${m[1].length > 2 ? 3 : 2}>${inline(m[2])}</h${m[1].length > 2 ? 3 : 2}>`); }
+    else if ((m = line.match(/^\s*[-*•]\s+(.*)/))) { if (list !== "ul") { close(); out.push("<ul>"); list = "ul"; } out.push(`<li>${inline(m[1])}</li>`); }
+    else if ((m = line.match(/^\s*\d+[.)]\s+(.*)/))) { if (list !== "ol") { close(); out.push("<ol>"); list = "ol"; } out.push(`<li>${inline(m[1])}</li>`); }
+    else if (line.trim()) { close(); out.push(`<p>${inline(line)}</p>`); }
+    else close();
+  }
+  close(); return out.join("");
+}
+
+function add(role, html) {
+  const div = document.createElement("div");
+  div.className = "msg " + role; div.innerHTML = html;
+  $("log").append(div); div.scrollIntoView({ block: "nearest" }); return div;
+}
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const text = $("q").value.trim(); if (!text) return;
+  $("q").value = ""; $("send").disabled = true;
+  history.push({ role: "user", text }); applyLang();
+  add("user", esc(text));
+  const pending = add("bot", `<p>${T[lang].thinking}</p>`);
+  try {
+    const res = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: history }) });
+    const data = await res.json();
+    if (!res.ok || data.refused) throw new Error(data.refused ? "refused" : data.error);
+    history.push({ role: "assistant", text: data.text });
+    let html = markdown(data.text);
+    if (data.sources?.length) {
+      html += `<div class="sources">${T[lang].sources}<ol>` + data.sources.map((s) =>
+        `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</li>`).join("") + "</ol></div>";
+    }
+    pending.innerHTML = html;
+  } catch (err) {
+    history.pop();
+    pending.innerHTML = `<p>${esc(T[lang].errors[err.message] || T[lang].errors.default)}</p>`;
+  } finally { $("send").disabled = false; $("q").focus(); }
+});
+$("q").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("form").requestSubmit(); } });
+applyLang();
+</script>
+</body>
+</html>
