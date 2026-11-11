@@ -1,0 +1,60 @@
+- date: '2024-02-17'
+  event:
+    fi: DSA kokonaan sovellettavaksi
+    en: DSA fully applicable
+  source: https://eur-lex.europa.eu/eli/reg/2022/2065/oj
+- date: '2024-05-20'
+  event:
+    fi: eIDAS 2.0 voimaan
+    en: eIDAS 2.0 in force
+  source: https://eur-lex.europa.eu/eli/reg/2024/1183/oj
+- date: '2025-02-02'
+  event:
+    fi: Tekoälyasetuksen kiellot voimaan, mm. tunteiden tunnistus työpaikoilla ja oppilaitoksissa
+    en: AI Act prohibitions in force, incl. emotion recognition in workplaces and education
+  source: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- date: '2025-04-08'
+  event:
+    fi: 'NIS2: Suomen kyberturvallisuuslaki voimaan'
+    en: 'NIS2: Finland''s Cybersecurity Act in force'
+  source: https://eur-lex.europa.eu/eli/dir/2022/2555/oj
+- date: '2025-06-28'
+  event:
+    fi: Esteettömyysdirektiivin vaatimukset sovellettaviksi
+    en: European Accessibility Act requirements applicable
+  source: https://eur-lex.europa.eu/eli/dir/2019/882/oj
+- date: '2025-09-12'
+  event:
+    fi: Data-asetus sovellettavaksi
+    en: Data Act applicable
+  source: https://eur-lex.europa.eu/eli/reg/2023/2854/oj
+- date: '2026-08-02'
+  event:
+    fi: Tekoälyasetuksen läpinäkyvyysvelvoitteet (artikla 50)
+    en: AI Act transparency obligations (Article 50)
+  source: https://eur-lex.europa.eu/eli/reg/2026/1744/oj
+- date: '2026-09-11'
+  event:
+    fi: Kyberresilienssisäädöksen haavoittuvuuksien raportointivelvoite
+    en: Cyber Resilience Act vulnerability reporting obligation
+  source: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+- date: '2026-12-02'
+  event:
+    fi: 'Tekoälyasetus: tekoälysisällön merkinnän siirtymäaika päättyy jo markkinoilla oleville järjestelmille'
+    en: 'AI Act: transition period for labelling AI content ends for systems already on the market'
+  source: https://eur-lex.europa.eu/eli/reg/2026/1744/oj
+- date: '2027-12-02'
+  event:
+    fi: 'Tekoälyasetus: liitteen III suuririskiset järjestelmät (mm. työelämä ja koulutus)'
+    en: 'AI Act: Annex III high-risk systems (incl. employment and education)'
+  source: https://eur-lex.europa.eu/eli/reg/2026/1744/oj
+- date: '2027-12-11'
+  event:
+    fi: Kyberresilienssisäädös kokonaan sovellettavaksi
+    en: Cyber Resilience Act fully applicable
+  source: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+- date: '2028-08-02'
+  event:
+    fi: 'Tekoälyasetus: tuotteisiin sulautetut suuririskiset järjestelmät (liite I)'
+    en: 'AI Act: high-risk systems embedded in products (Annex I)'
+  source: https://eur-lex.europa.eu/eli/reg/2026/1744/oj

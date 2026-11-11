@@ -1,0 +1,32 @@
+id: nis2
+type: eu-legislation
+name:
+  fi: NIS2-direktiivi
+  en: NIS2 Directive
+reference:
+  fi: Direktiivi (EU) 2022/2555
+  en: Directive (EU) 2022/2555
+status:
+  fi: Suomessa kyberturvallisuuslaki 8.4.2025 alkaen
+  en: In Finland, Cybersecurity Act since 8 Apr 2025
+summary:
+  fi: Kyberriskien hallinta ja merkittävien poikkeamien ilmoittaminen. Hyvä käytäntö, vaikka laki ei koskisi.
+  en: Cyber risk management and reporting of significant incidents. Good practice even where the law does not apply.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, direktiivi (EU) 2022/2555
+  url: https://eur-lex.europa.eu/eli/dir/2022/2555/oj
+finland:
+  authority:
+    fi: Traficom koordinoi, valvonta toimialoittain
+    en: Traficom coordinates, supervision by sector
+  national_guidance: []
+applies_when:
+- condition:
+    fi: Organisaatio kuuluu direktiivin toimialoihin ja kokorajoihin, esim. verkkoyhteisöalusta.
+    en: The organisation falls within the directive's sectors and size thresholds, e.g. an online community platform.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

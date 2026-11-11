@@ -1,0 +1,22 @@
+id: ep2024
+type: eu-policy
+name:
+  fi: Parlamentin päätöslauselma virtuaalimaailmoista
+  en: Parliament resolution on virtual worlds
+reference:
+  fi: Euroopan parlamentti · JURI-valiokunta
+  en: European Parliament · JURI Committee
+status:
+  fi: Hyväksytty 17.1.2024
+  en: Adopted 17 Jan 2024
+summary:
+  fi: Immateriaalioikeus koskee myös virtuaalimaailmoja. Parlamentti pyysi komissiolta ohjeita toimijoiden vastuista.
+  en: Intellectual property law also applies in virtual worlds. Parliament asked the Commission for guidance on operators' responsibilities.
+jurisdiction: EU
+primary_sources:
+- title: Euroopan parlamentti, päätöslauselma virtuaalimaailmoista P9_TA(2024)0029
+  url: https://www.europarl.europa.eu/doceo/document/TA-9-2024-0029_FI.html
+applies_when: []
+keywords: []
+last_verified: ''
+todo: ''

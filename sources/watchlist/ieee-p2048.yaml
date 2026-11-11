@@ -1,0 +1,12 @@
+id: ieee-p2048
+type: standard-in-development
+name:
+  fi: 'IEEE P2048 Metaverse: terminology, definitions and taxonomy'
+  en: 'IEEE P2048 Metaverse: terminology, definitions and taxonomy'
+status:
+  fi: Standardiprojekti
+  en: Standards project
+jurisdiction: global
+primary_sources:
+- title: IEEE SA, P2048
+  url: https://standards.ieee.org/ieee/2048/11169/

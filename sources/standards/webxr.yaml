@@ -1,0 +1,21 @@
+id: webxr
+type: standard
+category: xr-runtime
+name:
+  fi: WebXR Device API
+  en: WebXR Device API
+publisher: W3C
+status:
+  fi: Candidate Recommendation Draft, 9.6.2026
+  en: Candidate Recommendation Draft, 9 Jun 2026
+summary:
+  fi: VR- ja AR-kokemukset selaimessa ilman sovellusasennusta. Toimii vain suojatulla HTTPS-yhteydellä.
+  en: VR and AR experiences in the browser without installing an app. Works only over a secure HTTPS connection.
+jurisdiction: global
+primary_sources:
+- title: W3C, WebXR Device API
+  url: https://www.w3.org/TR/webxr/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

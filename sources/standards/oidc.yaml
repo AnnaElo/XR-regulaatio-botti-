@@ -1,0 +1,21 @@
+id: oidc
+type: standard
+category: identity
+name:
+  fi: OpenID Connect
+  en: OpenID Connect
+publisher: OpenID Foundation
+status:
+  fi: Core 1.0, perustuu OAuth 2.0:aan
+  en: Core 1.0, built on OAuth 2.0
+summary:
+  fi: Kirjautuminen eri palveluihin yhdellä tunnistautumisella. Sovelluksen ei tarvitse käsitellä salasanoja.
+  en: Sign-in to different services with a single authentication. The app does not need to handle passwords.
+jurisdiction: global
+primary_sources:
+- title: OpenID Foundation, How OpenID Connect Works
+  url: https://openid.net/developers/how-connect-works/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

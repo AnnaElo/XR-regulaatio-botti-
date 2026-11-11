@@ -1,0 +1,23 @@
+id: did
+type: standard
+category: identity
+name:
+  fi: Decentralized Identifiers (DID)
+  en: Decentralized Identifiers (DID)
+publisher: W3C
+status:
+  fi: v1.0 suositus 19.7.2022, v1.1 ehdokassuositus 5.3.2026
+  en: v1.0 Recommendation 19 Jul 2022, v1.1 Candidate Recommendation 5 Mar 2026
+summary:
+  fi: Käyttäjän oma hajautettu tunniste ilman keskitettyä rekisteriä. Ei edellytä lohkoketjua.
+  en: A user-controlled decentralised identifier without a central registry. Does not require a blockchain.
+jurisdiction: global
+primary_sources:
+- title: W3C, DID v1.0
+  url: https://www.w3.org/TR/did-1.0/
+- title: W3C, DID v1.1 -ehdokassuositus
+  url: https://www.w3.org/TR/2026/CR-did-1.1-20260305/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

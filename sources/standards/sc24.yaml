@@ -1,0 +1,21 @@
+id: sc24
+type: standard
+category: organisation
+name:
+  fi: ISO/IEC JTC 1/SC 24
+  en: ISO/IEC JTC 1/SC 24
+publisher: ISO ja IEC
+status:
+  fi: Metaverse-työpaja 26.6.2023
+  en: Metaverse workshop 26 Jun 2023
+summary:
+  fi: Alikomitea, joka valmistelee mm. VR-, AR- ja metaverse-aiheisia ISO/IEC-standardeja.
+  en: Subcommittee preparing ISO/IEC standards on VR, AR and the metaverse, among others.
+jurisdiction: global
+primary_sources:
+- title: JTC 1, SC 24:n metaverse-työpaja
+  url: https://jtc1info.org/replay-of-the-jtc-1-sc-24-workshop-on-metaverse/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

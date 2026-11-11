@@ -1,0 +1,24 @@
+id: web40
+type: eu-policy
+name:
+  fi: Web 4.0 ja virtuaalimaailmat -aloite
+  en: Web 4.0 and virtual worlds initiative
+reference:
+  fi: Euroopan komissio · COM(2023) 442
+  en: European Commission · COM(2023) 442
+status:
+  fi: Julkaistu 11.7.2023
+  en: Published 11 Jul 2023
+summary:
+  fi: 'EU:n strategia virtuaalimaailmoille: osaaminen, eurooppalainen ekosysteemi, julkiset palvelut ja avoimet standardit.'
+  en: 'The EU strategy for virtual worlds: skills, a European ecosystem, public services and open standards.'
+jurisdiction: EU
+primary_sources:
+- title: Euroopan komissio, Virtual worlds
+  url: https://digital-strategy.ec.europa.eu/en/policies/virtual-worlds
+- title: Euroopan komissio, Web 4.0 ja virtuaalimaailmat (IP/23/3718)
+  url: https://ec.europa.eu/commission/presscorner/detail/en/ip_23_3718
+applies_when: []
+keywords: []
+last_verified: ''
+todo: ''

@@ -1,0 +1,12 @@
+id: iso-iec-24931-1
+type: standard-in-development
+name:
+  fi: 'ISO/IEC 24931-1 Metaverse – Part 1: Concepts, characteristics and technology'
+  en: 'ISO/IEC 24931-1 Metaverse – Part 1: Concepts, characteristics and technology'
+status:
+  fi: Lopullinen luonnos (FDIS)
+  en: Final draft (FDIS)
+jurisdiction: global
+primary_sources:
+- title: ISO, ISO/IEC FDIS 24931-1
+  url: https://www.iso.org/standard/88529.html

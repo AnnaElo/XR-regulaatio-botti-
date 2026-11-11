@@ -1,0 +1,23 @@
+id: msf
+type: standard
+category: organisation
+name:
+  fi: Metaverse Standards Forum
+  en: Metaverse Standards Forum
+publisher: Yritysten ja standardointijärjestöjen foorumi
+status:
+  fi: Perustettu 21.6.2022
+  en: Founded 21 Jun 2022
+summary:
+  fi: Ei laadi standardeja itse vaan edistää olemassa olevien yhteentoimivuutta. Julkaisi 2026 Web of Worlds -whitepaperin.
+  en: Does not write standards itself but promotes interoperability of existing ones. Published the Web of Worlds white paper in 2026.
+jurisdiction: global
+primary_sources:
+- title: Metaverse Standards Forum
+  url: https://metaverse-standards.org/
+- title: Metaverse Standards Forum, Web of Worlds -whitepaper
+  url: https://webofworlds.github.io/initial_MSF_Whitepaper
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

@@ -1,0 +1,34 @@
+id: cra
+type: eu-legislation
+name:
+  fi: Kyberresilienssisäädös (CRA)
+  en: Cyber Resilience Act (CRA)
+reference:
+  fi: Asetus (EU) 2024/2847
+  en: Regulation (EU) 2024/2847
+status:
+  fi: Raportointi 11.9.2026, kokonaan 11.12.2027
+  en: Reporting 11 Sep 2026, fully 11 Dec 2027
+summary:
+  fi: Kyberturvavaatimukset tuotteen koko elinkaaren ajan. Aktiivisesti hyödynnetyistä haavoittuvuuksista on ilmoitettava.
+  en: Cybersecurity requirements across the whole product life cycle. Actively exploited vulnerabilities must be reported.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2024/2847
+  url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+- title: Euroopan komissio, Cyber Resilience Act
+  url: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+finland:
+  authority:
+    fi: null
+    en: null
+  national_guidance: []
+applies_when:
+- condition:
+    fi: EU:ssa myydään digitaalisia tuotteita, esim. XR-laitteita tai -ohjelmistoja.
+    en: Digital products, e.g. XR devices or software, are sold in the EU.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

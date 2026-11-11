@@ -1,0 +1,12 @@
+id: ietf-oauth-2-1
+type: standard-in-development
+name:
+  fi: IETF OAuth 2.1
+  en: IETF OAuth 2.1
+status:
+  fi: Luonnos, versio 16 (2.9.2026)
+  en: Draft, version 16 (2 Sep 2026)
+jurisdiction: global
+primary_sources:
+- title: IETF, OAuth 2.1 -luonnos
+  url: https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/

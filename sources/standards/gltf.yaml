@@ -1,0 +1,21 @@
+id: gltf
+type: standard
+category: 3d-content
+name:
+  fi: glTF 2.0
+  en: glTF 2.0
+publisher: Khronos Group
+status:
+  fi: ISO/IEC 12113:2022
+  en: null
+summary:
+  fi: Kevyt formaatti 3D-mallien siirtoon ja reaaliaikaiseen käyttöön. Oletusvalinta yksittäisille 3D-objekteille.
+  en: A lightweight format for transferring 3D models and using them in real time. The default choice for single 3D objects.
+jurisdiction: global
+primary_sources:
+- title: Khronos Group, glTF 2.0 ISO/IEC-standardiksi
+  url: https://www.khronos.org/news/press/khronos-gltf-2.0-released-as-an-iso-iec-international-standard
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.
