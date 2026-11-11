@@ -1,0 +1,21 @@
+id: openxr
+type: standard
+category: xr-runtime
+name:
+  fi: OpenXR
+  en: OpenXR
+publisher: Khronos Group
+status:
+  fi: Versio 1.1, 15.4.2024
+  en: Version 1.1, 15 Apr 2024
+summary:
+  fi: 'Yhteinen rajapinta natiiveille XR-sovelluksille: sama sovellus toimii eri valmistajien laitteilla. Tuettu mm. Unityssä, Unreal Enginessä ja Godotissa.'
+  en: 'A common API for native XR apps: the same app runs on devices from different vendors. Supported in Unity, Unreal Engine and Godot, among others.'
+jurisdiction: global
+primary_sources:
+- title: Khronos Group, OpenXR 1.1 -tiedote
+  url: https://khronos.org/news/press/khronos-releases-openxr-1.1-to-further-streamline-cross-platform-xr-development
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

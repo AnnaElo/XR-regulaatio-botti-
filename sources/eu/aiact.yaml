@@ -1,0 +1,74 @@
+id: aiact
+type: eu-legislation
+name:
+  fi: Tekoälyasetus (AI Act)
+  en: Artificial Intelligence Act (AI Act)
+reference:
+  fi: Asetus (EU) 2024/1689, muutettu asetuksella (EU) 2026/1744
+  en: Regulation (EU) 2024/1689, amended by Regulation (EU) 2026/1744
+status:
+  fi: 'Porrastetusti 2025–2028: kiellot 2.2.2025, art. 50 2.8.2026, liite III 2.12.2027, liite I 2.8.2028'
+  en: 'Phased 2025–2028: prohibitions 2 Feb 2025, Art. 50 2 Aug 2026, Annex III 2 Dec 2027, Annex I 2 Aug 2028'
+summary:
+  fi: Tunteiden tunnistus on kielletty työpaikoilla ja oppilaitoksissa. Riskiluokka kannattaa tunnistaa jo konseptivaiheessa.
+  en: Emotion recognition is banned in workplaces and educational institutions. The risk class is worth identifying already at the concept stage.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2024/1689
+  url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- title: EUR-Lex, asetus (EU) 2026/1744 (tekoälyasetuksen muutos)
+  url: https://eur-lex.europa.eu/eli/reg/2026/1744/oj
+finland:
+  authority:
+    fi: Traficom (keskitetty yhteyspiste)
+    en: Traficom (single point of contact)
+  national_guidance: []
+applies_when:
+- condition:
+    fi: XR-sovelluksessa on tekoälyhahmo, chatbot tai virtuaaliavustaja, jonka kanssa käyttäjä on vuorovaikutuksessa.
+    en: The XR application has an AI character, chatbot or virtual assistant that the user interacts with.
+  obligation:
+    fi: Käyttäjälle kerrotaan, että hän on vuorovaikutuksessa tekoälyn kanssa.
+    en: Users are told that they are interacting with an AI system.
+  article: art. 50(1)
+- condition:
+    fi: Sovellus tuottaa synteettistä kuvaa, ääntä, videota tai 3D-sisältöä, esim. generoituja avatareja tai deepfake-sisältöä.
+    en: The application generates synthetic images, audio, video or 3D content, e.g. generated avatars or deepfakes.
+  obligation:
+    fi: Tuotettu sisältö merkitään koneluettavasti keinotekoiseksi, ja deepfaket ilmoitetaan. Jo markkinoilla olevien järjestelmien siirtymäaika päättyy 2.12.2026.
+    en: Generated content is marked as artificial in a machine-readable way and deepfakes are disclosed. The transition period for systems already on the market ends on 2 Dec 2026.
+  article: art. 50(2), 50(4)
+- condition:
+    fi: Sovellus päättelee tunteita esim. katseesta, ilmeistä, äänestä tai liikkeistä.
+    en: The application infers emotions, e.g. from gaze, facial expressions, voice or movement.
+  obligation:
+    fi: Kielletty työpaikoilla ja oppilaitoksissa (poikkeuksena lääketieteelliset ja turvallisuussyyt). Muissa yhteyksissä käyttäjille ilmoitetaan tunteentunnistuksesta.
+    en: Prohibited in workplaces and educational institutions (except for medical or safety reasons). Elsewhere users are informed of emotion recognition.
+  article: art. 5(1)(f), art. 50(3)
+- condition:
+    fi: Tekoälyä käytetään koulutuksessa tai työelämässä arviointiin tai päätöksiin, esim. VR-koulutuksen suoritusarviointi tai rekrytointi.
+    en: AI is used for assessment or decisions in education or employment, e.g. scoring VR training or recruitment.
+  obligation:
+    fi: 'Voi olla liitteen III suuririskinen järjestelmä: riskienhallinta, tekninen dokumentaatio, ihmisvalvonta. Sovelletaan 2.12.2027 alkaen.'
+    en: 'May be an Annex III high-risk system: risk management, technical documentation, human oversight. Applies from 2 Dec 2027.'
+  article: art. 6, liite III kohdat 3 ja 4
+- condition:
+    fi: Tekoäly on osa tuotetta, jota koskee liitteen I tuotelainsäädäntö, esim. lääkinnällinen XR-laite tai lelu.
+    en: AI is part of a product covered by Annex I product legislation, e.g. a medical XR device or a toy.
+  obligation:
+    fi: Suuririskisen järjestelmän vaatimukset sovelletaan 2.8.2028 alkaen.
+    en: High-risk requirements apply from 2 Aug 2028.
+  article: art. 6(1), liite I
+keywords:
+- tekoäly
+- AI
+- chatbot
+- avatar
+- deepfake
+- tunteentunnistus
+- emotion recognition
+- biometriikka
+- koulutus
+- suuririskinen
+last_verified: ''
+todo: Lisää Traficomin tekoälyasetusta koskevat ohjesivut (finland.national_guidance). Määräpäivät Annan sivun mukaisia (digitaalinen omnibus); tarkista EUR-Lexistä ennen julkaisua.

@@ -1,0 +1,21 @@
+id: vc
+type: standard
+category: identity
+name:
+  fi: Verifiable Credentials
+  en: Verifiable Credentials
+publisher: W3C
+status:
+  fi: Data Model v2.0, suositus 15.5.2025
+  en: Data Model v2.0, Recommendation 15 May 2025
+summary:
+  fi: Väärentämiseltä suojatut, koneellisesti todennettavat todisteet, esim. jäsenyydestä, pätevyydestä tai omistajuudesta.
+  en: Tamper-proof, machine-verifiable credentials, e.g. of membership, qualifications or ownership.
+jurisdiction: global
+primary_sources:
+- title: W3C, Verifiable Credentials Data Model v2.0
+  url: https://www.w3.org/TR/vc-data-model-2.0/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

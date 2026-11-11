@@ -1,0 +1,21 @@
+id: openusd
+type: standard
+category: 3d-content
+name:
+  fi: OpenUSD
+  en: OpenUSD
+publisher: Alliance for OpenUSD
+status:
+  fi: Core Specification 1.0, 17.12.2025
+  en: Core Specification 1.0, 17 Dec 2025
+summary:
+  fi: Laajojen 3D-näkymien kuvaaminen, koostaminen ja yhteismuokkaus. Täydentää glTF:ää.
+  en: Describing, composing and collaboratively editing large 3D scenes. Complements glTF.
+jurisdiction: global
+primary_sources:
+- title: Alliance for OpenUSD, Core Specification 1.0
+  url: https://aousd.org/uncategorized/foundations-of-open-3d-development-introducing-aousd-core-specification-1-0/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

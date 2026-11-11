@@ -1,0 +1,21 @@
+id: design
+type: standard
+category: xr-runtime
+name:
+  fi: Web Platform Design Principles
+  en: Web Platform Design Principles
+publisher: W3C, Technical Architecture Group
+status:
+  fi: Ohjeistus (W3C Group Note), ei standardi
+  en: Guidance (W3C Group Note), not a standard
+summary:
+  fi: Web-ratkaisujen suunnitteluperiaatteet, mm. käyttäjälähtöisyys, laiteriippumattomuus ja tietojen minimointi.
+  en: Design principles for web solutions, including user focus, device independence and data minimisation.
+jurisdiction: global
+primary_sources:
+- title: W3C, Web Platform Design Principles
+  url: https://www.w3.org/TR/design-principles/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

@@ -1,0 +1,58 @@
+id: gdpr
+type: eu-legislation
+name:
+  fi: Tietosuoja-asetus (GDPR)
+  en: General Data Protection Regulation (GDPR)
+reference:
+  fi: Asetus (EU) 2016/679
+  en: Regulation (EU) 2016/679
+status:
+  fi: Sovellettu 25.5.2018 alkaen
+  en: Applied since 25 May 2018
+summary:
+  fi: Tietosuoja sisällytetään suunnitteluun ja oletusasetuksiin. Tunnistamiseen käytettävä biometrinen data on erityistä henkilötietoa.
+  en: Data protection is built into design and default settings. Biometric data used for identification is a special category of personal data.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2016/679
+  url: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+finland:
+  authority:
+    fi: Tietosuojavaltuutetun toimisto
+    en: Office of the Data Protection Ombudsman
+  national_guidance:
+  - title: Tietosuojavaltuutetun toimisto
+    url: https://tietosuoja.fi/
+applies_when:
+- condition:
+    fi: Sovellus kerää katseenseuranta-, liike-, ääni- tai kasvodataa, josta käyttäjä voidaan tunnistaa.
+    en: The application collects eye-tracking, motion, voice or face data from which the user can be identified.
+  obligation:
+    fi: 'Tunnistamiseen käytetty biometrinen data on erityinen henkilötietoryhmä: tarvitaan art. 9 mukainen peruste, yleensä nimenomainen suostumus.'
+    en: 'Biometric data used for identification is a special category: an Art. 9 basis is needed, usually explicit consent.'
+  article: art. 4(14), art. 9
+- condition:
+    fi: Käsittely on laajamittaista tai siihen liittyy uutta teknologiaa ja korkea riski, esim. XR-sensoridatan analyysi.
+    en: Processing is large-scale or uses new technology with high risk, e.g. analysis of XR sensor data.
+  obligation:
+    fi: Tehdään tietosuojaa koskeva vaikutustenarviointi (DPIA).
+    en: Carry out a data protection impact assessment (DPIA).
+  article: art. 35
+- condition:
+    fi: XR-sovellus käsittelee mitä tahansa henkilötietoja, myös testikäyttäjien dataa.
+    en: The XR application processes any personal data, including test users' data.
+  obligation:
+    fi: 'Sisäänrakennettu ja oletusarvoinen tietosuoja: kerätään vain tarpeellinen sensoridata ja käsitellään se laitteella, kun mahdollista.'
+    en: 'Data protection by design and by default: collect only the sensor data needed and process it on the device where possible.'
+  article: art. 25
+keywords:
+- henkilötiedot
+- personal data
+- katseenseuranta
+- eye tracking
+- biometriikka
+- sensoridata
+- suostumus
+- DPIA
+last_verified: ''
+todo: Lisää tietosuojavaltuutetun toimiston ohjeet erityisistä henkilötietoryhmistä ja vaikutustenarvioinnista (tarkat sivulinkit).

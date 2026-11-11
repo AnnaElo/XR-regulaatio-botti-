@@ -1,0 +1,21 @@
+id: ogctiles
+type: standard
+category: geospatial
+name:
+  fi: OGC API – Tiles
+  en: OGC API – Tiles
+publisher: Open Geospatial Consortium
+status:
+  fi: 'Part 1: Core, versio 1.0'
+  en: 'Part 1: Core, version 1.0'
+summary:
+  fi: Paikkatiedon jakelu laattoina web-rajapinnan kautta. WMTS-standardin seuraaja.
+  en: Serving geospatial data as tiles through a web API. Successor to the WMTS standard.
+jurisdiction: global
+primary_sources:
+- title: OGC, OGC API – Tiles
+  url: https://www.ogc.org/standard/ogcapi-tiles/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

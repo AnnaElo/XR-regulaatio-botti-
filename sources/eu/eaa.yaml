@@ -1,0 +1,32 @@
+id: eaa
+type: eu-legislation
+name:
+  fi: Esteettömyysdirektiivi (EAA)
+  en: European Accessibility Act (EAA)
+reference:
+  fi: Direktiivi (EU) 2019/882
+  en: Directive (EU) 2019/882
+status:
+  fi: Sovellettu 28.6.2025 alkaen
+  en: Applied since 28 Jun 2025
+summary:
+  fi: Muissa XR-ratkaisuissa saavutettavuus on suositeltava hyvä käytäntö.
+  en: For other XR solutions, accessibility is recommended good practice.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, direktiivi (EU) 2019/882
+  url: https://eur-lex.europa.eu/eli/dir/2019/882/oj
+finland:
+  authority:
+    fi: Traficom
+    en: Traficom
+  national_guidance: []
+applies_when:
+- condition:
+    fi: Tuote tai palvelu kuuluu soveltamisalaan, esim. verkkokaupan AR-sovitus. Mikroyritykset on vapautettu palveluvaatimuksista.
+    en: The product or service is in scope, e.g. AR try-on in an online shop. Microenterprises are exempt from the service requirements.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

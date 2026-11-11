@@ -1,0 +1,21 @@
+id: citygml
+type: standard
+category: geospatial
+name:
+  fi: CityGML 3.0
+  en: CityGML 3.0
+publisher: Open Geospatial Consortium
+status:
+  fi: Avoin OGC-standardi
+  en: Open OGC standard
+summary:
+  fi: Kaupunkien semanttiset 3D-mallit ja niiden siirto järjestelmien välillä.
+  en: Semantic 3D city models and their exchange between systems.
+jurisdiction: global
+primary_sources:
+- title: OGC, CityGML
+  url: https://www.ogc.org/standard/citygml/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

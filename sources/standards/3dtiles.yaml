@@ -1,0 +1,21 @@
+id: 3dtiles
+type: standard
+category: geospatial
+name:
+  fi: 3D Tiles
+  en: 3D Tiles
+publisher: Cesium · OGC:n yhteisöstandardi
+status:
+  fi: Versio 1.1
+  en: Version 1.1
+summary:
+  fi: Suurten 3D-aineistojen, kuten kaupunkimallien ja pistepilvien, suoratoisto. Perustuu glTF:ään.
+  en: Streaming of large 3D datasets such as city models and point clouds. Based on glTF.
+jurisdiction: global
+primary_sources:
+- title: Cesium, 3D Tiles -spesifikaatio
+  url: https://github.com/CesiumGS/3d-tiles
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

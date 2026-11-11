@@ -1,0 +1,24 @@
+# Pohja yhdelle säädökselle tai standardille. Kopioi nimellä <id>.yaml oikeaan kansioon.
+# Kaikki käyttäjälle näkyvät tekstit kirjoitetaan sekä suomeksi (fi) että englanniksi (en).
+id: ""                     # lyhyt tunniste, sama kuin tiedostonimi
+type: ""                   # standard | eu-legislation | eu-policy | national-legislation | standard-in-development
+category: ""               # standardeille: xr-runtime | 3d-content | geospatial | identity | organisation
+name: {fi: "", en: ""}
+reference: {fi: "", en: ""}  # säädöksen numero tai standardin tunnus, esim. "Asetus (EU) 2016/679"
+publisher: ""              # standardeille: Khronos Group, W3C, OGC, ISO/IEC, IEEE ...
+status: {fi: "", en: ""}   # voimassaolo, versio tai soveltamispäivät
+summary: {fi: "", en: ""}  # 1–2 virkettä
+jurisdiction: ""           # global | EU | FI | US | ...  (botti suodattaa käyttäjän markkina-alueen mukaan)
+primary_sources:           # AINA ensisijainen lähde: EUR-Lex, Finlex, standardin julkaisijan oma sivu
+  - {title: "", url: ""}
+finland:                   # vain säädöksille: Suomen viranomainen ja kansalliset tulkintaohjeet
+  authority: {fi: "", en: ""}
+  national_guidance:
+    - {title: "", url: ""}
+applies_when:              # botti perustelee suosituksensa näillä
+  - condition: {fi: "", en: ""}   # milloin koskee XR-toteutusta
+    obligation: {fi: "", en: ""}  # mitä kehittäjän pitää tehdä
+    article: ""                   # artikla tai standardin luku
+keywords: []
+last_verified: ""          # VVVV-KK-PP, milloin tiedot on viimeksi tarkistettu ensisijaisesta lähteestä
+todo: ""

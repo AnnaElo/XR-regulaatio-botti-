@@ -1,0 +1,12 @@
+id: w3c-did-1-1
+type: standard-in-development
+name:
+  fi: W3C DID v1.1
+  en: W3C DID v1.1
+status:
+  fi: Ehdokassuositus 5.3.2026
+  en: Candidate Recommendation 5 Mar 2026
+jurisdiction: global
+primary_sources:
+- title: W3C, DID v1.1 -ehdokassuositus
+  url: https://www.w3.org/TR/2026/CR-did-1.1-20260305/

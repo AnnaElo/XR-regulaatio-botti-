@@ -1,0 +1,21 @@
+id: geopose
+type: standard
+category: geospatial
+name:
+  fi: GeoPose
+  en: GeoPose
+publisher: Open Geospatial Consortium
+status:
+  fi: Versio 1.0
+  en: Version 1.0
+summary:
+  fi: Kohteen sijainti ja asento maahan ankkuroidussa viitekehyksessä, myös virtuaalisille kohteille.
+  en: The position and orientation of an object in an Earth-anchored reference frame, including virtual objects.
+jurisdiction: global
+primary_sources:
+- title: OGC, GeoPose
+  url: https://www.ogc.org/standard/geopose/
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

@@ -1,0 +1,32 @@
+id: eidas
+type: eu-legislation
+name:
+  fi: eIDAS 2.0
+  en: eIDAS 2.0
+reference:
+  fi: Asetus (EU) 2024/1183
+  en: Regulation (EU) 2024/1183
+status:
+  fi: Voimaan 20.5.2024
+  en: In force since 20 May 2024
+summary:
+  fi: Eurooppalainen digitaalisen identiteetin lompakko, jonka käyttö on käyttäjälle vapaaehtoista.
+  en: A European digital identity wallet whose use is voluntary for users.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2024/1183
+  url: https://eur-lex.europa.eu/eli/reg/2024/1183/oj
+finland:
+  authority:
+    fi: Digi- ja väestötietovirasto tarjoaa lompakon (HE 17/2026 vp)
+    en: The Digital and Population Data Services Agency provides the wallet (government proposal HE 17/2026)
+  national_guidance: []
+applies_when:
+- condition:
+    fi: Palvelu tarjoaa sähköistä tunnistamista tai luottamuspalveluja tai hyväksyy EU:n digitaalisen identiteetin lompakon.
+    en: The service offers electronic identification or trust services, or accepts the EU Digital Identity Wallet.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

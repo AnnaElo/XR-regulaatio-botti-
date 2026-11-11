@@ -1,0 +1,32 @@
+id: mica
+type: eu-legislation
+name:
+  fi: Kryptovara-asetus (MiCA)
+  en: Markets in Crypto-Assets Regulation (MiCA)
+reference:
+  fi: Asetus (EU) 2023/1114
+  en: Regulation (EU) 2023/1114
+status:
+  fi: Sovellettu kokonaan 30.12.2024 alkaen
+  en: Fully applied since 30 Dec 2024
+summary:
+  fi: NFT:t jäävät pääsääntöisesti soveltamisalan ulkopuolelle. Rajanveto kannattaa varmistaa tapauskohtaisesti.
+  en: NFTs are generally out of scope. The boundary should be checked case by case.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2023/1114
+  url: https://eur-lex.europa.eu/eli/reg/2023/1114/oj
+finland:
+  authority:
+    fi: Finanssivalvonta
+    en: Financial Supervisory Authority (FIN-FSA)
+  national_guidance: []
+applies_when:
+- condition:
+    fi: Alustalla lasketaan liikkeeseen, tarjotaan tai välitetään kryptovaroja, esim. omia tokeneita.
+    en: The platform issues, offers or trades crypto-assets, e.g. its own tokens.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

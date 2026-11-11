@@ -1,0 +1,21 @@
+id: ogcfeat
+type: standard
+category: geospatial
+name:
+  fi: OGC API – Features
+  en: OGC API – Features
+publisher: Open Geospatial Consortium
+status:
+  fi: Avoin rajapintastandardi
+  en: Open API standard
+summary:
+  fi: Paikkatietokohteiden jakaminen web-rajapinnan kautta yhtenäisellä tavalla.
+  en: Sharing geospatial features through a web API in a consistent way.
+jurisdiction: global
+primary_sources:
+- title: OGC, OGC API – Features
+  url: https://ogc.org/standard/ogcapi-features
+applies_when: []
+keywords: []
+last_verified: ''
+todo: Lisää applies_when-ehdot ja tarkista, onko linkki itse spesifikaatioon vai tiedotteeseen.

@@ -1,0 +1,32 @@
+id: dsa
+type: eu-legislation
+name:
+  fi: Digipalveluasetus (DSA)
+  en: Digital Services Act (DSA)
+reference:
+  fi: Asetus (EU) 2022/2065
+  en: Regulation (EU) 2022/2065
+status:
+  fi: Sovellettu kokonaan 17.2.2024 alkaen
+  en: Fully applied since 17 Feb 2024
+summary:
+  fi: Velvoitteet porrastuvat palvelun koon mukaan. Keskeisiä ovat laittoman sisällön ilmoitusmenettely ja valvonnan avoimuus.
+  en: Obligations scale with the size of the service. Key elements are notice-and-action for illegal content and transparency of moderation.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2022/2065
+  url: https://eur-lex.europa.eu/eli/reg/2022/2065/oj
+finland:
+  authority:
+    fi: Traficom (digitaalisten palvelujen koordinaattori)
+    en: Traficom (Digital Services Coordinator)
+  national_guidance: []
+applies_when:
+- condition:
+    fi: Palvelu tallentaa tai jakaa käyttäjien sisältöä, esim. metaversumialusta.
+    en: The service stores or shares user content, e.g. a metaverse platform.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).

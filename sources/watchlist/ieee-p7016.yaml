@@ -1,0 +1,12 @@
+id: ieee-p7016
+type: standard-in-development
+name:
+  fi: IEEE P7016 Metaversumijärjestelmien eettinen suunnittelu ja ylläpito
+  en: IEEE P7016 Ethically aligned design and operation of metaverse systems
+status:
+  fi: Standardiprojekti
+  en: Standards project
+jurisdiction: global
+primary_sources:
+- title: IEEE SA, P7016-työryhmä
+  url: https://sagroups.ieee.org/7016

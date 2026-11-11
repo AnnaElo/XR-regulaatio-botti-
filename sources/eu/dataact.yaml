@@ -1,0 +1,32 @@
+id: dataact
+type: eu-legislation
+name:
+  fi: Data-asetus (Data Act)
+  en: Data Act
+reference:
+  fi: Asetus (EU) 2023/2854
+  en: Regulation (EU) 2023/2854
+status:
+  fi: Sovellettu pääosin 12.9.2025 alkaen
+  en: Mostly applied since 12 Sep 2025
+summary:
+  fi: Laitteen käyttäjällä on oikeus laitteen keräämään dataan. Rajanveto XR-laitteiden osalta kannattaa varmistaa tapauskohtaisesti.
+  en: Device users have the right to the data their device collects. Scope for XR devices should be checked case by case.
+jurisdiction: EU
+primary_sources:
+- title: EUR-Lex, asetus (EU) 2023/2854
+  url: https://eur-lex.europa.eu/eli/reg/2023/2854/oj
+finland:
+  authority:
+    fi: Traficom (datakoordinaattori, hallituksen esitys 25.9.2025)
+    en: Traficom (data coordinator, government proposal 25 Sep 2025)
+  national_guidance: []
+applies_when:
+- condition:
+    fi: Ratkaisuun kuuluu verkkoon liitettäviä, dataa kerääviä laitteita tai tarjotaan datankäsittelypalveluja.
+    en: The solution includes connected devices that collect data, or data processing services are offered.
+  obligation: null
+  article: null
+keywords: []
+last_verified: ''
+todo: Tarkenna applies_when-ehdot artiklatasolle ja lisää Suomen viranomaisen tulkintaohjeet (finland.national_guidance).
