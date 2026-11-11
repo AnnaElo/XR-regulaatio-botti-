@@ -1,0 +1,18 @@
+{
+  "name": "xr-regulaatio-botti",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:kb": "node scripts/build-kb.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test:bot": "node scripts/run-tests.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.160.0",
+    "yaml": "^2.9.1"
+  }
+}
